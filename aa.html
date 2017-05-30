@@ -1,0 +1,27 @@
+<html>
+  <head>
+  <script type="text/javascript">
+    function cchange () {
+    for (i=0; i<document.bkmkmenu.bkmks.length; i++) {
+     if (document.bkmkmenu.elements[i].checked) {
+     document.getElementById("txt").style.color  = document.bkmkmenu.elements[i].value;
+     <!-- 選択されている項目に合わせて色を変更 //-->
+     }
+    }
+   }
+  </script>
+ </head>
+ <body>
+   <div id="txt" style="color:black">■■■■■</div>
+  <form name = "bkmkmenu">
+   <input type = "radio" name = "bkmks" value = "red" ><font color="red">赤</font><br>
+   <input type = "radio" name = "bkmks" value = "blue" ><font color="blue">青</font><br>
+   <input type = "radio" name = "bkmks" value = "yellow" ><font color="yellow">黄</font><br>
+   <input type = "radio" name = "bkmks" value = "black" ><font color="black">黒</font><br>
+   <input type = "radio" name = "bkmks" value = "green" ><font color="green">緑</font><br>
+   <input type = "button" value = "change to the selected color" onclick = "cchange()">
+   <!-- ボタンを押すと文字列の色を変える関数を実行 //-->
+  </form>
+ </body>
+  <!--  //-->
+</html>
